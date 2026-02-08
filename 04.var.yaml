@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars:
-  COURSE: "Devops learning by manu"
-  DURATION: "150+ HRS"
-  TRAINER: "SivaKumar"
+  - COURSE: "Devops learning by manu"
+    DURATION: "150+ HRS"
+    TRAINER: "SivaKumar"
   tasks:
   - name: Printing variables
     ansible.builtin.debug:

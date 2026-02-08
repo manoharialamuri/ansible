@@ -1,0 +1,28 @@
+- name: "Manu"
+  DOB: "07-06-2000"
+  Mobile NO: 1234567890
+  Addresses:
+  - Flatno: 102
+    Street: "Gandhi nagar"
+    City: "HYD"
+    type: "Current"
+
+  - Flatno: 102
+    Street: "Gandhi nagar"
+    City: "HYD"
+    type: "Per"
+
+- name: "Manu"
+  DOB: "07-06-2000"
+  Mobile NO: 1234567890
+  Addresses:
+  - Flatno: 102
+    Street: "Gandhi nagar"
+    City: "HYD"
+    type: "Current"
+
+  - Flatno: 102
+    Street: "Gandhi nagar"
+    City: "HYD"
+    type: "Per"
+

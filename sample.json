@@ -1,0 +1,55 @@
+{
+    "Students": [
+        {
+        "Firstname": "Manu",
+        "DOB": "07-06-2000",
+
+        "Addresses": [
+            {
+                "Type": "Perm",
+                "Flatno": 102,
+                "street": "Gandhi nagar",
+                "city": "Hyd"
+
+            },
+            {
+                "Type": "curr",
+                "Flatno": 102,
+                "street": "Gandhi nagar",
+                "city": "Hyd"
+
+            }
+
+        ],
+        "Skills": ["Devops","shell","Ansible"]
+
+        },
+
+        {
+        "Firstname": "Sandeep",
+        "DOB": "07-06-2000",
+
+        "Addresses": [
+            {
+                "Type": "Perm",
+                "Flatno": 102,
+                "street": "Gandhi nagar",
+                "city": "Hyd"
+
+            },
+            {
+                "Type": "curr",
+                "Flatno": 102,
+                "street": "Gandhi nagar",
+                "city": "Hyd"
+
+            }
+
+        ],
+        "Skills": ["Devops","shell","Ansible"]
+
+        }
+
+    ]
+    
+}

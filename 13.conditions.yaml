@@ -39,7 +39,8 @@
   hosts: local
   connection: local
   vars_prompt:
-    ENTERNAME: please a number
+  - name: ENTERNAME
+    prompt: please a number
     private: false
   tasks:
   - name: taking number from prompt

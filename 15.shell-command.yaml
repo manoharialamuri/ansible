@@ -4,9 +4,9 @@
   tasks:
   - name: command module
     ansible.builtin.command: /etc/passwd | grep root
-    registar: passwd_output
+    register: passwd_output
   - name : print command module
     ansible.builtin.debug:
       msg: "{{ passwd_output }}"
 
-      
+

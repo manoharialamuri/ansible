@@ -39,11 +39,11 @@
   hosts: local
   connection: local
   vars_prompt:
-    entername: please a number
+    ENTERNAME: please a number
     private: false
   tasks:
   - name: taking number from prompt
     ansible.builtin.debug:
-      msg: "{{ Entername }}"
-    when: Entername =5
+      msg: "{{ ENTERNAME }}"
+    when: ENTERNAME =5
 

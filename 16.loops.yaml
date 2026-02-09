@@ -6,6 +6,6 @@
    ansible.builtin.debug:
     msg: "I like {{ item }}"
   loop:
-  - banana
-  - apple
-  - mango
+   - banana
+    - apple
+    - mango

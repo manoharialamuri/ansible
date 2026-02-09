@@ -11,3 +11,5 @@
     - { name: "mysql",state: "absent" } #map
     - { name: "zip",state: "present" }
     - { name: "nginx",state: "present" }
+
+    

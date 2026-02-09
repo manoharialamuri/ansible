@@ -5,8 +5,7 @@
    name: loops
    ansible.builtin.debug:
     msg: "I like {{ item }}"
-  loops:
+  loop:
   - banana
   - apple
   - mango
-  

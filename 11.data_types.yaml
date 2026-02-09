@@ -5,10 +5,10 @@
     PROGRAM: "Devsecops with aws" #string
     DURATION: 140 #int/num
     IS_LIVE: True #bool
-    DETAILS: #map/dic
+    DETAILS: #map/dic START WITH {}
       MONTHS: 4
       TRAINER: "SIVA"
-    TOPICS:
+    TOPICS: #LIST - OR [ ] WILL START
     - Linux
     - shell
     - Devops
@@ -22,4 +22,3 @@
         DETAILS: {{ DETAILS }}
         TOPICS: {{ TOPICS }}
 
-        

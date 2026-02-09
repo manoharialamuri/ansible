@@ -1,0 +1,12 @@
+- name: conditions in ansible
+  hosts: local
+  connection: local
+  vars:
+    IS_LIVE: True
+  tasks:
+    name: Is session is live
+    ansible.builtin.debug:
+      msg: "yes it is live"
+    when: IS_LIVE
+    
+

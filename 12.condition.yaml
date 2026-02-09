@@ -4,9 +4,9 @@
   vars:
     IS_LIVE: True
   tasks:
-    name: Is session is live
+  - name: Is session is live
     ansible.builtin.debug:
       msg: "yes it is live"
     when: IS_LIVE
-    
+
 

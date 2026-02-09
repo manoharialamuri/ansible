@@ -1,0 +1,12 @@
+- name: demp on loops
+  hosts: local
+  connection: local
+  tasks:
+   name: loops
+   ansible.builtin.debug:
+    msg: "I like {{ item }}"
+  loops:
+  - banana
+  - apple
+  - mango
+  

@@ -12,7 +12,7 @@
   - name: print variables
     vars:
       NAME: ANsible from Task level
-  ansible.builtin.debug:
+    ansible.builtin.debug:
         msg: "print {{ NAME }}"
 
 

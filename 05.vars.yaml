@@ -1,4 +1,4 @@
-- name: play level variables
+- name: task level variables
   hosts: local
   connection: local
   vars:
@@ -11,3 +11,4 @@
       COURSE: "Ansible"
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+      

@@ -1,4 +1,4 @@
-- name: play level variables
+- name: Inventory variables
   hosts: local
   connection: local
 
@@ -7,3 +7,4 @@
     vars:
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}"
+      

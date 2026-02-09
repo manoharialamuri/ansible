@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    no.of.sessions: 7
+      no.of.sessions: 7
   tasks:
   - name: more than 5 sessions
     ansible.builtin.debug:

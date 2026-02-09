@@ -46,5 +46,5 @@
   - name: taking number from prompt
     ansible.builtin.debug:
       msg: "{{ ENTERNAME }}"
-    when: ENTERNAME =5
+    when: ENTERNAME = 5
 

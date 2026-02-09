@@ -1,36 +1,49 @@
-- name: check when number is less than 10
+# - name: check when number is less than 10
+#   hosts: local
+#   connection: local
+#   vars:
+#     no_of_sessions: 7
+#   tasks:
+#   - name: more than 5 sessions
+#     ansible.builtin.debug:
+#       msg: "yes more than 5 sessions"
+#     when: no_of_sessions > 5
+
+
+
+# - name: check when number is less than 10
+#   hosts: local
+#   connection: local
+#   vars:
+#     no_of_sessions: 4
+#   tasks:
+#   - name: more than 5 sessions
+#     ansible.builtin.debug:
+#       msg: "yes more than 5 sessions"
+#     when: no_of_sessions > 5
+
+
+# - name: check when number is less than 10
+#   hosts: local
+#   connection: local
+#   vars:
+#     no_of_sessions: 5
+#   tasks:
+#   - name: more than 5 sessions
+#     ansible.builtin.debug:
+#       msg: "yes more than 5 sessions"
+#     when: no_of_sessions > 5
+
+
+- name: Taking prompt and adding conditions
   hosts: local
   connection: local
-  vars:
-    no_of_sessions: 7
+  vars_prompt:
+    Entername: please a number
+    private: false
   tasks:
-  - name: more than 5 sessions
+  - name: taking number from prompt
     ansible.builtin.debug:
-      msg: "yes more than 5 sessions"
-    when: no_of_sessions > 5
+      msg: "{{ Entername }}"
+    when: Entername =5
 
-
-
-- name: check when number is less than 10
-  hosts: local
-  connection: local
-  vars:
-    no_of_sessions: 4
-  tasks:
-  - name: more than 5 sessions
-    ansible.builtin.debug:
-      msg: "yes more than 5 sessions"
-    when: no_of_sessions > 5
-
-
-- name: check when number is less than 10
-  hosts: local
-  connection: local
-  vars:
-    no_of_sessions: 5
-  tasks:
-  - name: more than 5 sessions
-    ansible.builtin.debug:
-      msg: "yes more than 5 sessions"
-    when: no_of_sessions > 5
-  

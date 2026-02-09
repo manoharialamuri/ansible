@@ -11,7 +11,7 @@
   #     msg: "{{ passwd_output }}"
 
   - name: shell module
-    ansible.builtin.shell: ls -ltr > cat file.txt
+    ansible.builtin.shell: ls -ltr > file.txt
     register: file_output
   - name : print command module
     ansible.builtin.debug:

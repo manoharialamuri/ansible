@@ -3,18 +3,18 @@
   connection: local
   become: yes
   tasks:
-  # - name: command module
-  #   # ansible.builtin.command: /etc/passwd | grep root
-  #   register: passwd_output
+  - name: command module
+    # ansible.builtin.shell: /etc/passwd | grep root
+    register: passwd_output
+  - name : print shell module
+    ansible.builtin.debug:
+      msg: "{{ passwd_output }}"
+
+  # - name: shell module
+  #   ansible.builtin.shell: ls -ltr > file.txt
+  #   register: file_output
   # - name : print command module
   #   ansible.builtin.debug:
-  #     msg: "{{ passwd_output }}"
-
-  - name: shell module
-    ansible.builtin.shell: ls -ltr > file.txt
-    register: file_output
-  - name : print command module
-    ansible.builtin.debug:
-      msg: "{{ file_output }}"
+  #     msg: "{{ file_output }}"
 
 

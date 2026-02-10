@@ -3,10 +3,10 @@
   connection: local
   vars: #string
     topics: linux,shell,ansible,terraform
-  tags_list: #map
-    name: ansible
-    project: roboshop
-    component: mongodb
+    tags_list: #map
+      name: ansible
+      project: roboshop
+      component: mongodb
   tasks:
   - name: greeting
     ansible.builtin.debug:
@@ -16,6 +16,6 @@
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
 
-  - name: convert map to list
+  - name: convert map to list or items
     ansible.builtin.debug:
       msg: "{{ tags_list | dict2items }}"

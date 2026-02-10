@@ -7,24 +7,24 @@
       name: ansible
       project: roboshop
       component: mongodb
-    tags_list:
-      [
-        {
-            "key": "name",
-            "value": "ansible"
-        },
-        {
-            "key": "project",
-            "value": "roboshop"
-        },
-        {
-            "key": "component",
-            "value": "mongodb"
-        }
-    ]
+      tags_list:
+        [
+          {
+              "key": "name",
+              "value": "ansible"
+          },
+          {
+              "key": "project",
+              "value": "roboshop"
+          },
+          {
+              "key": "component",
+              "value": "mongodb"
+          }
+      ]
 
-  tasks:
-  - name: greeting
+    tasks:
+    - name: greeting
     ansible.builtin.debug:
       msg: "Hi Manu, {{ Greeting | default ('Good Morning')}}"
 

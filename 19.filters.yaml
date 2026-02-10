@@ -41,7 +41,7 @@
 
   - name: read yaml file
     ansible.builtin.set_fact: #setting variable dynamically
-      student_yaml: "{{ lookup ('file', sample.yaml ) | from_yaml }}"
+      student_yaml: "{{ lookup('file', sample.yaml ) | from_yaml }}"
 
   - name: covert yaml to json
     ansible.builtin.debug:

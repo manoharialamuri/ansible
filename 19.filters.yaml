@@ -22,19 +22,19 @@
         }
     ]
 
-    tasks:
-    - name: greeting
-      ansible.builtin.debug:
+  tasks:
+  - name: greeting
+    ansible.builtin.debug:
         msg: "Hi Manu, {{ Greeting | default ('Good Morning')}}"
 
-    - name: convert string to list
-      ansible.builtin.debug:
+  - name: convert string to list
+    ansible.builtin.debug:
         msg: "{{ topics | split(',') }}"
 
-    - name: convert map to list or items
-      ansible.builtin.debug:
+  - name: convert map to list or items
+    ansible.builtin.debug:
         msg: "{{ tags_map | dict2items }}"
 
-    - name: convert list to map
-      ansible.builtin.debug:
+  - name: convert list to map
+    ansible.builtin.debug:
         msg: "{{ tags_list | items2dict }}"

@@ -40,7 +40,7 @@
         msg: "{{ tagsList | items2dict }}"
 
   - name: read yaml file
-    ansible.builtin.set_facts: #setting variable dynamically
+    ansible.builtin.set_fact: #setting variable dynamically
       student_yaml: "{{ lookup ('file', sample.yaml ) | from_yaml }}"
 
   - name: covert yaml to json

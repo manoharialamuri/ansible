@@ -7,35 +7,34 @@
       name: ansible
       project: roboshop
       component: mongodb
-      tags_list:
-        [
-          {
-              "key": "name",
-              "value": "ansible"
-          },
-          {
-              "key": "project",
-              "value": "roboshop"
-          },
-          {
-              "key": "component",
-              "value": "mongodb"
-          }
-      ]
+    tagsList: [
+        {
+            "key": "name",
+            "value": "ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "component",
+            "value": "catalogue"
+        }
+    ]
 
     tasks:
     - name: greeting
-    ansible.builtin.debug:
-      msg: "Hi Manu, {{ Greeting | default ('Good Morning')}}"
+      ansible.builtin.debug:
+        msg: "Hi Manu, {{ Greeting | default ('Good Morning')}}"
 
-  - name: convert string to list
-    ansible.builtin.debug:
-      msg: "{{ topics | split(',') }}"
+    - name: convert string to list
+      ansible.builtin.debug:
+        msg: "{{ topics | split(',') }}"
 
-  - name: convert map to list or items
-    ansible.builtin.debug:
-      msg: "{{ tags_map | dict2items }}"
+    - name: convert map to list or items
+      ansible.builtin.debug:
+        msg: "{{ tags_map | dict2items }}"
 
-  - name: convert list to map
-    ansible.builtin.debug:
-      msg: "{{ tags_list | items2dict }}""
+    - name: convert list to map
+      ansible.builtin.debug:
+        msg: "{{ tags_list | items2dict }}"

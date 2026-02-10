@@ -3,7 +3,7 @@
   connection: local
   vars: #string
     topics: linux,shell,ansible,terraform
-  tag_list: #map
+  tags_list: #map
     name: ansible
     project: roboshop
     component: mongodb
@@ -18,4 +18,4 @@
 
   - name: convert map to list
     ansible.builtin.debug:
-      msg: "{{ tag_list | dict2items }}"
+      msg: "{{ tags_list | dict2items }}"

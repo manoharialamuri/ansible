@@ -1,8 +1,12 @@
 - name: demo on filters/functions
   hosts: local
   connection: local
-  vars:
+  vars: #string
     topics: linux,shell,ansible,terraform
+  tag_list: #map
+    name: ansible
+    project: roboshop
+    component: mongodb
   tasks:
   - name: greeting
     ansible.builtin.debug:
@@ -11,4 +15,7 @@
   - name: convert string to list
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
-      
+
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "{{ tag_list | dict2items }}"

@@ -3,6 +3,7 @@
   connection: local
   vars: #string
     topics: linux,shell,ansible,terraform
+    myip: 277.277.277.277
     tags_map: #map
       name: ansible
       project: roboshop
@@ -59,4 +60,7 @@
     ansible.builtin.debug:
       msg: "{{ topics.split(',') | map('capitalize') | join(',') }}"
 
+  - name: checking IPV4 address
+    ansible.builtin.debug:
+      msg: "{{ myip | ansible.utils.ip }}"
 

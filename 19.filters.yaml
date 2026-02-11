@@ -62,5 +62,9 @@
 
   - name: checking IPV4 address
     ansible.builtin.debug:
+      msg: "{{ myip | ipaddr }}"
+
+  - name: checking IPV4 address
+    ansible.builtin.debug:
       msg: "{{ myip | ansible.utils.ip }}"
 

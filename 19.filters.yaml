@@ -57,5 +57,6 @@
 
   - name: making upper and lower cases
     ansible.builtin.debug:
-      msg: "{{ topics | capitalize }}"
+      msg: "{{ topics.split(',') | map('capitalize') | join(',') }}"
+
 

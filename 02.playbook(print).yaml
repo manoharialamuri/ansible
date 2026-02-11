@@ -4,3 +4,20 @@
   - name: print Hello World
     ansible.builtin.debug:
       msg: "Hello World!"
+    ignore_errors: true
+
+- name: Hello World
+  hosts: local
+  tasks:
+  - name: print Hello World
+    ansible.builtin.debug:
+      msg: "Hello World!"
+
+
+- name: play-2
+  hosts: local
+  connection: local
+  tasks:
+  - name: print play-2 and task-1
+    ansible.builtin.debug:
+      msg: "Hello World! from play-2 and task -1"

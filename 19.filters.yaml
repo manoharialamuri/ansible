@@ -3,7 +3,8 @@
   connection: local
   vars: #string
     topics: linux,shell,ansible,terraform
-    myip: 277.277.277.277
+    # myip: 277.277.277.277
+    myip: 0.0.0.0
     tags_map: #map
       name: ansible
       project: roboshop
@@ -64,7 +65,7 @@
     ansible.builtin.debug:
       msg: "{{ myip | ipaddr }}"
 
-  - name: checking IPV4 address
-    ansible.builtin.debug:
-      msg: "{{ myip | ansible.utils.ip }}"
+  # - name: checking IPV4 address
+  #   ansible.builtin.debug:
+  #     msg: "{{ myip | ansible.utils.ip }}" #version is not supporting for this collection ansible.utils.ip
 

@@ -53,9 +53,9 @@
 
   - name: making lower cases
     ansible.builtin.debug:
-      msg: "{{ topics | lower }}
+      msg: "{{ topics | lower }}"
 
-  # - name: making upper and lower cases
-  #   ansible.builtin.debug:
-  #     msg: "{{ topics | capitalize }}
+  - name: making upper and lower cases
+    ansible.builtin.debug:
+      msg: "{{ topics | capitalize }}"
 

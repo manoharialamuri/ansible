@@ -47,3 +47,15 @@
     ansible.builtin.debug:
       msg: "{{ student_yaml | to_nice_json }}"
 
+  - name: making upper cases
+    ansible.builtin.debug:
+      msg: "{{ topics | upper }}"
+
+  - name: making lower cases
+    ansible.builtin.debug:
+      msg: "{{ topics | lower }}
+
+  - name: making upper and lower cases
+    ansible.builtin.debug:
+      msg: "{{ topics | capitalize }}
+

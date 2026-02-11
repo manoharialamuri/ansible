@@ -1,10 +1,10 @@
-- name: Hello World
-  hosts: web
-  tasks:
-  - name: print Hello World
-    ansible.builtin.debug:
-      msg: "Hello World!"
-    ignore_errors: true
+# - name: Hello World
+#   hosts: web
+#   tasks:
+#   - name: print Hello World
+#     ansible.builtin.debug:
+#       msg: "Hello World!"
+#     ignore_errors: true
 
 - name: Hello World
   hosts: local
